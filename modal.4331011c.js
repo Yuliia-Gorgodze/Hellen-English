@@ -117,83 +117,23 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/modal.js":[function(require,module,exports) {
+;
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]")
   };
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
   }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\images\\header-hero\\background-img.png":[["background-img.e8e7515c.png","images/header-hero/background-img.png"],"images/header-hero/background-img.png"],"./..\\images\\header-hero\\background-img-tab.png":[["background-img-tab.94ded6e8.png","images/header-hero/background-img-tab.png"],"images/header-hero/background-img-tab.png"],"./..\\images\\header-hero\\advantages-logo1.svg":[["advantages-logo1.198fc75b.svg","images/header-hero/advantages-logo1.svg"],"images/header-hero/advantages-logo1.svg"],"./..\\images\\header-hero\\advantages-logo1-big.svg":[["advantages-logo1-big.70ace7e5.svg","images/header-hero/advantages-logo1-big.svg"],"images/header-hero/advantages-logo1-big.svg"],"./..\\images\\header-hero\\advantages-logo2.svg":[["advantages-logo2.5a29f690.svg","images/header-hero/advantages-logo2.svg"],"images/header-hero/advantages-logo2.svg"],"./..\\images\\header-hero\\advantages-logo2-big.svg":[["advantages-logo2-big.353bafe3.svg","images/header-hero/advantages-logo2-big.svg"],"images/header-hero/advantages-logo2-big.svg"],"./..\\images\\header-hero\\advantages-logo3.svg":[["advantages-logo3.f3b13619.svg","images/header-hero/advantages-logo3.svg"],"images/header-hero/advantages-logo3.svg"],"./..\\images\\header-hero\\advantages-logo3-big.svg":[["advantages-logo3-big.8c439d81.svg","images/header-hero/advantages-logo3-big.svg"],"images/header-hero/advantages-logo3-big.svg"],"./..\\images\\problems\\campfire.svg":[["campfire.dd721c90.svg","images/problems/campfire.svg"],"images/problems/campfire.svg"],"./..\\images\\program\\program.png":[["program.560f7bee.png","images/program/program.png"],"images/program/program.png"],"./..\\images\\program\\program@2x.png":[["program@2x.1121e106.png","images/program/program@2x.png"],"images/program/program@2x.png"],"./..\\images\\program\\program-tab.png":[["program-tab.fe247427.png","images/program/program-tab.png"],"images/program/program-tab.png"],"./..\\images\\program\\program-tab@2x.png":[["program-tab@2x.73c35063.png","images/program/program-tab@2x.png"],"images/program/program-tab@2x.png"],"./..\\images\\program\\program-desktop.png":[["program-desktop.ddf44e19.png","images/program/program-desktop.png"],"images/program/program-desktop.png"],"./..\\images\\program\\program-desktop@2x.png":[["program-desktop@2x.d1246a24.png","images/program/program-desktop@2x.png"],"images/program/program-desktop@2x.png"],"./..\\images\\teacher-section\\icons\\check-mark-optimized.svg":[["check-mark-optimized.321f85ac.svg","images/teacher-section/icons/check-mark-optimized.svg"],"images/teacher-section/icons/check-mark-optimized.svg"],"./..\\images\\teacher-section\\icons\\fire-optimized.svg":[["fire-optimized.7231fda8.svg","images/teacher-section/icons/fire-optimized.svg"],"images/teacher-section/icons/fire-optimized.svg"],"./..\\images\\footer\\logo-mob-footer.png":[["logo-mob-footer.0f4d4dc2.png","images/footer/logo-mob-footer.png"],"images/footer/logo-mob-footer.png"],"./..\\images\\footer\\logo-tablet-footer.png":[["logo-tablet-footer.7545d28b.png","images/footer/logo-tablet-footer.png"],"images/footer/logo-tablet-footer.png"],"./..\\images\\footer\\logo-footer.png":[["logo-footer.3eba66a9.png","images/footer/logo-footer.png"],"images/footer/logo-footer.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})();
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +337,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/modal.js"], null)
+//# sourceMappingURL=/modal.4331011c.js.map
