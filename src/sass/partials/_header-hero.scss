@@ -401,7 +401,13 @@ a {
     height: 100%;
     margin: 0;
   }
-  @include desktop {
+
+  @media screen and (min-width: 1317px) and (max-width: 1500px) {
+    max-width: 50%;
+    height: 100%;
+    margin: 0;
+  }
+  @media screen and (min-width: 1501px) {
     max-width: 732px;
     height: 100%;
     margin-bottom: 0;
@@ -548,7 +554,11 @@ a {
     flex-direction: column;
     max-width: 290px;
   }
-  @include desktop {
+
+  @media screen and (min-width: 1316px) and (max-width: 1500px) {
+    width: 650px;
+  }
+  @media screen and (min-width: 1501px) {
     width: 50%;
   }
 }
