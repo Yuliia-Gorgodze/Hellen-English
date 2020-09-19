@@ -397,14 +397,16 @@ a {
   }
 
   @include tablet {
-    width: 400px;
+    max-width: 400px;
     height: 100%;
     margin: 0;
   }
   @include desktop {
-    width: calc(100% / 2);
-    height: 100%;
-    margin: 0;
+    max-width: 732px;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: -100px;
+    margin-left: 0;
   }
 }
 
@@ -547,7 +549,7 @@ a {
     max-width: 290px;
   }
   @include desktop {
-    max-width: 642px;
+    width: 50%;
   }
 }
 
