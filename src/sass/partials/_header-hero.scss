@@ -403,7 +403,7 @@ a {
   }
   @include desktop {
     max-width: 732px;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
     margin-right: -100px;
     margin-left: 0;
