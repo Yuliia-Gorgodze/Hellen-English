@@ -277,9 +277,9 @@ button {
     width: 768px;
   }
 }
-@media screen and (min-width: 1314px) {
+@media screen and (min-width: 1316px) {
   .container {
-    width: 1314px;
+    width: 1316px;
   }
 }
 
@@ -309,7 +309,7 @@ a {
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .btn {
     width: 260px;
     height: 48px;
@@ -317,14 +317,14 @@ a {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .btn {
     width: 260px;
     height: 48px;
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .btn {
     width: 354px;
     height: 70px;
@@ -362,13 +362,13 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .btn-consult {
     width: 260px;
     height: 48px;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .btn-consult {
     font-size: 14px;
     line-height: 1.21;
@@ -379,12 +379,12 @@ a {
   color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .btn-consult.tablet {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .btn-consult.tablet {
     width: 260px;
     height: 48px;
@@ -392,13 +392,13 @@ a {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .btn-consult.tablet {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .menu-container .btn-consult {
     display: none;
   }
@@ -416,7 +416,7 @@ a {
   border: none;
   outline: none;
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .mobile-menu-button {
     display: none;
   }
@@ -435,13 +435,13 @@ a {
   background-size: cover;
   background-position-y: -250px;
 }
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .page-header {
     background-image: url(/background-img-tab.94ded6e8.png);
     background-position-y: -160px;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .page-header {
     background-image: url(/background-img-tab.94ded6e8.png);
     background-position-y: -230px;
@@ -458,7 +458,7 @@ a {
   flex-direction: row;
 }
 
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1316px) {
   .menu-container {
     padding-top: 34px;
     background: rgba(17, 21, 24, 0.9);
@@ -471,12 +471,12 @@ a {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .menu-container {
     display: flex;
   }
 }
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1316px) {
   .menu-container.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -487,12 +487,12 @@ a {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .mobile-menu-header {
     display: none;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .mobile-menu-header .page-navigation-logo {
     display: none;
   }
@@ -506,7 +506,7 @@ a {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .header-btn-wrap {
     display: none;
   }
@@ -518,17 +518,17 @@ a {
   padding: 0 20px;
   margin-bottom: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-menu {
     width: 320px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .header-menu {
     max-width: 400px;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .header-menu {
     padding-right: 0;
     padding-left: 0;
@@ -546,17 +546,17 @@ a {
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-menu-link {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .header-menu-link {
     font-size: 26px;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .header-menu-link {
     font-weight: bold;
     font-size: 14px;
@@ -569,7 +569,7 @@ a {
   color: #FF6B09;
 }
 
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .header-menu-item:not(:last-child) {
     margin-right: 40px;
   }
@@ -586,49 +586,69 @@ a {
   font-weight: 800;
   color: #111518;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero-header {
     font-size: 20px;
     line-height: 136%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .hero-header {
     font-size: 26px;
     line-height: 130%;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .hero-header {
     font-size: 58px;
     line-height: 130%;
   }
 }
 
-.hero-motivation-text {
-  margin-top: 0;
-  margin-bottom: 30px;
+.hero-motivation-title,
+.hero-motivation-msg {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.57;
   letter-spacing: 0.08em;
 }
-@media screen and (min-width: 1314px) {
-  .hero-motivation-text {
+@media screen and (max-width: 767px) {
+  .hero-motivation-title,
+.hero-motivation-msg {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1316px) {
+  .hero-motivation-title,
+.hero-motivation-msg {
+    width: 100%;
     font-size: 20px;
     line-height: 164.9%;
     letter-spacing: 0.08em;
   }
 }
-.hero-motivation-text .grey {
+.hero-motivation-title .grey,
+.hero-motivation-msg .grey {
   font-weight: 500;
   color: #B9B9B9;
 }
-.hero-motivation-text .black {
+.hero-motivation-title .black,
+.hero-motivation-msg .black {
   color: #111518;
 }
-.hero-motivation-text .orange {
+.hero-motivation-title .orange,
+.hero-motivation-msg .orange {
   color: #FF6B09;
+}
+
+.hero-motivation-msg {
+  margin-bottom: 30px;
+}
+@media (min-width: 1316px) {
+  .hero-motivation-msg {
+    margin-bottom: 40px;
+  }
 }
 
 .hero-img {
@@ -637,24 +657,26 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero-img {
-    width: 208px;
+    max-width: 208px;
     height: auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .hero-img {
-    width: 400px;
+    max-width: 400px;
     height: 100%;
     margin: 0;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .hero-img {
-    width: calc(100% / 2);
+    max-width: 732px;
     height: 100%;
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: -100px;
+    margin-left: 0;
   }
 }
 
@@ -664,7 +686,7 @@ a {
   list-style: none;
   padding: 0 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-advantages {
     margin-left: auto;
     margin-right: auto;
@@ -672,15 +694,16 @@ a {
     padding: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .header-advantages {
     display: flex;
     justify-content: space-between;
     padding: 0;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .header-advantages {
+    display: flex;
     justify-content: space-between;
     height: 103px;
   }
@@ -702,13 +725,13 @@ a {
   top: 0;
   left: 0;
 }
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1316px) {
   .header-advantages .advantages-item::before {
     height: 60px;
     width: 60px;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .header-advantages .advantages-item::before {
     height: 103px;
     width: 103px;
@@ -723,7 +746,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .advantages-item:nth-of-type(1) {
     width: 420px;
   }
@@ -736,34 +759,34 @@ a {
     width: 350px;
   }
 }
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1315px) {
   .adv-icon-1::before {
     background-image: url(/advantages-logo1.198fc75b.svg);
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .adv-icon-1::before {
     background-image: url(/advantages-logo1-big.70ace7e5.svg);
   }
 }
 
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1315px) {
   .adv-icon-2::before {
     background-image: url(/advantages-logo2.5a29f690.svg);
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .adv-icon-2::before {
     background-image: url(/advantages-logo2-big.353bafe3.svg);
   }
 }
 
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1315px) {
   .adv-icon-3::before {
     background-image: url(/advantages-logo3.f3b13619.svg);
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .adv-icon-3::before {
     background-image: url(/advantages-logo3-big.8c439d81.svg);
   }
@@ -777,13 +800,13 @@ a {
   letter-spacing: 0.08em;
   color: #111518;
 }
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1315px) {
   .advantages-title {
     font-size: 14px;
     line-height: 1.43;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .advantages-title {
     width: 100%;
     padding-left: 84px;
@@ -802,20 +825,20 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .hero-text-wrap {
     display: flex;
     flex-direction: column;
     max-width: 290px;
   }
 }
-@media screen and (min-width: 1314px) {
+@media (min-width: 1316px) {
   .hero-text-wrap {
-    max-width: 642px;
+    width: 50%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1314px) {
+@media screen and (min-width: 768px) and (max-width: 1315px) {
   .page-header .main-container {
     max-width: 768px;
   }
